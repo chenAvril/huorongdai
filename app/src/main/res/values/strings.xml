@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">货融贷</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="password_string">密&#160;&#160;&#160;&#160;码:</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+
+    <string name="recharge_notice">1.最小充值金额100元，充值金额必须是100元的整数倍。\n2.货融贷用户在线充值时将由银行存管平台收取充值手续费0.2%，为答谢广大用户，货融贷将为用户垫付充值手续费。\n3.投资部分资金用户提现手续费每笔2元；平台单笔提现额度范围为100元-100万元，但绑定的银行卡所属银行可能会有不同的提现额度显示。\n4.未投资部分资金用户单笔提现需收取2元+提现金额0.2%手续费。\n注：为方便广大投资人转移资金至存管系统进行充值投资的便捷，老平台在新平台上线期间提现规则调整为T+0，具体请关注官方公告。</string>
+    <string name="withdraw_notice">1.货融贷用户在线充值时将由银行存管平台收取充值手续费0.2%，为答谢广大用户，货融贷将为用户垫付充值手续费。\n2.投资部分资金用户提现手续费每笔2元；平台单笔提现额度范围为100元-100万元，但绑定的银行卡所属银行可能会有不同的提现额度显示。\n3.未投资部分资金用户单笔提现需收取2元+提现金额0.2%手续费。\n注：为方便广大投资人转移资金至存管系统进行充值投资的便捷，老平台在新平台上线期间提现规则调整为T+0，具体请关注官方公告。</string>
+
+    <string name="sign">签到</string>
+    <string name="sign_succeed_today">今日签到成功，增加积分</string>
+    <string name="sure">确定</string>
+    <string name="have_signed">已签到</string>
+    <string name="much_score_int">%1$d 分</string>
+    <string name="you_have_sign"><Data><![CDATA[<font color="%1$s">您已连续签到 </font><font color="%2$s">%3$d</font> <font color="%1$s">天，累计获得积分</font>]]></Data></string>
+
+
+    <string name="yqhb20_notes">好友注册\n(20元红包)</string>
+    <string name="jf50_notes">好友实名认\n证(50积分)</string>
+    <string name="qhytc_notes">好友投资\n(投资提成)</string>
+    <string name="reward_rules_notes">1、20元投资红包，单笔投资2000元可用，有效期3个月；\n2、积分可兑换投资红包；\n3、好友投资时，您将享有好友3个月内投资总收益的4%返现奖励</string>
+    <string name="example_notes">A推荐B注册，B在注册后3三个月内投资了两笔，分别为：\n标的1：10万，3个月，利率10%；\n标的2：10万，12个月，利率11%；\n则A获取的奖励为：20元邀请红包+100积分+投资提成\n投资提成=10万*10%*3/12*4% + 10万*11%*4%=540元</string>
+
+    <string name="aboutus">\t\t\t\t货融贷隶属于安徽恩泽资产管理有限公司旗下成立于2015年， 是安徽省较早开始运营的P2P网贷平台。 货融贷以金融从业者严谨务实的态度， 致力于解决中小企业融资难问题，为个人或企业提供一个透明、稳定、高效的网络借贷信息中介服务平台。\n
+                        \t\t\t\t货融贷是较早一批对于出借人进行风险保障的平台， 并始终要求借款人用资产进行超额抵押。 平台拥有严格的风控体系， 强大的技术开发团队，专业的风控流程，不断确保平台的数据及资金安全。真诚地为广大客户提供专业、全面、周到的服务，满足借款个体或企业各类资金需求以及投资用户的理财需要。\n
+                        \t\t\t\t货融贷是安全、透明、稳定、高效的互联网金融平台， 致力于利用互联网的便捷高效的特点， 整合行业优质资源， 为小微企业主和出借人士提供高质量的信息对接服务。</string>
+
+    <string name="risk1">\t\t围绕客户受理、风险识别、资信调查、评审委员会及流程管理等关键环节建立了完善的制度体系，对业务经营进行有效的监管。\n\n\t\t\t\t为了强化自身风险防御能力，最大限度保障投资人利益，货融贷专门设立由财务、运营、研发、风控等各部门高管组成风险管理委员会。一旦有重大决策、重要业务流程的决断，会由风险管理委员会共同商议出具风险评估报告，给出风险管理解决方案。同时，全面风险管理年度报告也由他们提供。\n</string>
+    <string name="risk2">\t\t货融贷对于融资项目的风险管理和合作单位的选择均采取了严格的考察标准和严格的准入制度，由实力雄厚、经营规范的合作单位对项目提供连带责任保证担保。\n\n\t\t\t\t货融贷拥有领先的机构评价体系和甄选机制，坚持合作机构优中选优原则，全面控制源头风险。同时在已准入机构的整个合作过程中都会对合作机构进行定期及不定期的贷后检查，从业务源头控制风险，保证出借人的权益。\n</string>
+    <string name="risk3">\t\t货融贷组建实力强劲的技术开发团队和专业运维团队，对接赛门铁克数据传输加密系统、阿里云云盾及云监控系统、设立移动安全体系等，竭力保证在任何时候客户的个人信息不被人擅自或意外取得、处理或删除，平台将遵守所有关于个人信息保存的法规要求，确保客户的投资安全和隐私安全。\n</string>
+
+
+    <string-array name="month_array">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+
+    <string-array name="big_things_time">
+        <item>2016年2月</item>
+        <item>2016年4月</item>
+        <item>2016年11月</item>
+        <item>2016年11月底</item>
+        <item>2016年12月</item>
+        <item>2016年12月底</item>
+        <item>2017年2月底</item>
+        <item>2017年4月</item>
+        <item>2017年6月</item>
+        <item>2017年8月</item>
+        <item>2017年12月</item>
+        <item>2017年12月</item>
+        <item>2018年4月</item>
+        <item>2018年4月</item>
+    </string-array>
+
+    <string-array name="big_things_thing">
+        <item>货融贷平台上线</item>
+        <item>货融贷平台注册人数突破5000人，入金突破1000000元</item>
+        <item>“重装起航“，货融贷更新升级第三方支付系统，为资金存管做准备</item>
+        <item>货融贷经过多方路演，成功完成Pre-A轮融资意向</item>
+        <item>国资背景、注资千万级别Pre-A轮，货融贷正式拥有“国资背景”的背景平台</item>
+        <item>首次货融贷实地考察</item>
+        <item>网站整体改版升级</item>
+        <item>开始对接银行存管业务</item>
+        <item>天府银行存管签约</item>
+        <item>天府银行存管平台上线运营</item>
+        <item>货融贷参与安徽省互金融协会网贷机构整改验收座谈会</item>
+        <item>货融贷出席2017互联网金融行业高峰论坛</item>
+        <item>货融贷加入上海资信NFCS网络金融征信系统</item>
+        <item>货融贷携手E签宝推进电子合同存证工作</item>
+    </string-array>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    <string name="message_pattern_dot_added">Dot added to pattern</string>
+    <string name="message_pattern_started">Pattern drawing started</string>
+    <string name="message_pattern_detected">Pattern drawing completed</string>
+    <string name="message_pattern_cleared">Pattern cleared</string>
+
+    <string name="xloading_dialog_message">正在加载中</string>
+    <string name="xloading_no_network_text">无网络连接，请检查你的网络</string>
+    <string name="xloading_error_text">加载失败，请稍后再试</string>
+    <string name="xloading_empty_text">暂无数据</string>
+    <string name="xloading_retry_text">点击重试</string>
+</resources>
+

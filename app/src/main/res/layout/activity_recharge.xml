@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+
+    <com.example.administrator.huorongdai.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:background="@drawable/bg_online_customer_service_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv"
+                    android:src="@drawable/renminbi"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp" />
+                <TextView
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/iv"
+                    android:id="@+id/tv_chongzhi"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/word_dark"
+                    android:textSize="16dp"
+                    android:text="充值金额："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_recharge_money"
+                    android:textColor="@color/word_dark"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:layout_toRightOf="@id/tv_chongzhi"
+                    android:layout_toLeftOf="@id/tv_yuan"
+                    android:hint="请输入充值金额"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="元"
+                    android:textColor="@color/word_dark"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+            <TextView
+                style="@style/btn_red_style"
+                android:id="@+id/btn_recharge"
+                android:layout_marginTop="20dp"
+                android:text="充值" />
+
+            <TextView
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#a4a4a4"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/recharge_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.example.administrator.huorongdai.view.MyScrollView>
+
+</LinearLayout>

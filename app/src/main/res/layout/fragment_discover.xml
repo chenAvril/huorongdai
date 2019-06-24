@@ -1,0 +1,294 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/fake_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/word_red"/>
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/word_red"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="发现"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/ll_jifen_shop"
+            android:gravity="center"
+            android:background="@drawable/bg_discover_bule"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="6dp"
+                android:textColor="@color/word_dark"
+                android:textSize="14dp"
+                android:text="积分商城"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:layout_marginTop="6dp"
+                android:textSize="14dp"
+                android:text="精美商品   不容错过"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/jifenshangcheng"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_my_friend"
+                android:gravity="center"
+                android:background="@drawable/bg_discover_orange"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_weight="2.1"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp">
+                    <TextView
+                        android:textColor="@color/word_dark"
+                        android:textSize="14dp"
+                        android:text="我的好友"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_marginTop="6dp"
+                        android:textSize="14dp"
+                        android:text="和好友快乐互动"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/myfriends"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_net_msg"
+                android:gravity="center"
+                android:background="@drawable/bg_discover_yellow"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_weight="2.1"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp">
+                    <TextView
+                        android:textColor="@color/word_dark"
+                        android:textSize="14dp"
+                        android:text="站内消息"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_marginTop="6dp"
+                        android:textSize="14dp"
+                        android:text="消息及时知道"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/zhanneimsg"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp">
+        <TextView
+            android:background="@color/light_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_sign"
+                style="@style/ll_account_nine">
+                <ImageView
+                    style="@style/iv_account_nine"
+                    android:src="@drawable/jinriqiandao"/>
+                <TextView
+                    style="@style/tv_account_nine"
+                    android:text="今日签到"/>
+            </LinearLayout>
+            <TextView
+                android:background="@color/light_gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/ll_calculator"
+                style="@style/ll_account_nine">
+                <ImageView
+                    style="@style/iv_account_nine"
+                    android:src="@drawable/jisuanqi_green"/>
+                <TextView
+                    android:text="收益计算器"
+                    style="@style/tv_account_nine"/>
+            </LinearLayout>
+            <TextView
+                android:background="@color/light_gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/ll_red_packet"
+                style="@style/ll_account_nine">
+                <ImageView
+                    style="@style/iv_account_nine"
+                    android:src="@drawable/myhongbao"/>
+                <TextView
+                    android:text="我的红包"
+                    style="@style/tv_account_nine" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="@color/light_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_prize"
+                style="@style/ll_account_nine">
+                <ImageView
+                    style="@style/iv_account_nine"
+                    android:src="@drawable/touzijiangpin"/>
+                <TextView
+                    android:text="投资奖品"
+                    style="@style/tv_account_nine" />
+            </LinearLayout>
+            <TextView
+                android:background="@color/light_gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/ll_hand_psw"
+                style="@style/ll_account_nine">
+                <ImageView
+                    style="@style/iv_account_nine"
+                    android:src="@drawable/shoushimima"/>
+                <TextView
+                    android:text="手势密码"
+                    style="@style/tv_account_nine" />
+            </LinearLayout>
+            <TextView
+                android:background="@color/light_gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/ll_borrow"
+                style="@style/ll_account_nine">
+                <ImageView
+                    style="@style/iv_account_nine"
+                    android:src="@drawable/woyaojiekuan"/>
+                <TextView
+                    android:text="我要借款"
+                    style="@style/tv_account_nine" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="@color/light_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_account_safe"
+                style="@style/ll_account_nine">
+                <ImageView
+                    style="@style/iv_account_nine"
+                    android:src="@drawable/account_safe"/>
+                <TextView
+                    android:text="账户安全"
+                    style="@style/tv_account_nine" />
+            </LinearLayout>
+            <TextView
+                android:background="@color/light_gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/ll_borrow_record"
+                style="@style/ll_account_nine">
+                <ImageView
+                    style="@style/iv_account_nine"
+                    android:src="@drawable/borrowing_record"/>
+                <TextView
+                    android:text="借款记录"
+                    style="@style/tv_account_nine" />
+            </LinearLayout>
+            <TextView
+                android:background="@color/light_gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/ll_latest_notes"
+                style="@style/ll_account_nine">
+                <ImageView
+                    style="@style/iv_account_nine"
+                    android:src="@drawable/info_pilu"/>
+                <TextView
+                    android:text="信息披露"
+                    style="@style/tv_account_nine" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="@color/light_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+</LinearLayout>

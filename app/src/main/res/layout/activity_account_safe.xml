@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_online_customer_service_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_real_name"
+            style="@style/more_activity_rl">
+            <LinearLayout
+                style="@style/more_activity_ll">
+                <ImageView
+                    android:id="@+id/iv_real_name"
+                    style="@style/more_activity_icon"
+                    android:src="@drawable/right_no"/>
+                <TextView
+                    android:text="实名认证"
+                    style="@style/more_activity_tv_con" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_real_name"
+                android:text="未认证"
+                android:textColor="@color/gray"
+                android:layout_toLeftOf="@id/iv1"
+                android:layout_centerVertical="true"
+                style="@style/more_activity_tv_con" />
+            <ImageView
+                android:id="@+id/iv1"
+                style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <RelativeLayout
+            style="@style/more_activity_rl">
+            <LinearLayout
+                style="@style/more_activity_ll">
+                <ImageView
+                    style="@style/more_activity_icon"
+                    android:src="@drawable/right_yes"/>
+                <TextView
+                    android:text="手机认证"
+                    style="@style/more_activity_tv_con" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_phone_number"
+                android:text="未认证"
+                android:textColor="@color/gray"
+                android:layout_toLeftOf="@id/iv2"
+                android:layout_centerVertical="true"
+                style="@style/more_activity_tv_con" />
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/iv2"
+                style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <RelativeLayout
+            android:id="@+id/rl_change_psd"
+            style="@style/more_activity_rl">
+            <LinearLayout
+                style="@style/more_activity_ll">
+                <ImageView
+                    style="@style/more_activity_icon"
+                    android:src="@drawable/right_yes"/>
+                <TextView
+                    android:text="登录密码"
+                    style="@style/more_activity_tv_con" />
+            </LinearLayout>
+            <TextView
+                android:text="修改"
+                android:textColor="@color/gray"
+                android:layout_toLeftOf="@id/iv3"
+                android:layout_centerVertical="true"
+                style="@style/more_activity_tv_con" />
+            <ImageView
+                android:id="@+id/iv3"
+                style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <RelativeLayout
+            android:id="@+id/rl_trade_psd"
+            style="@style/more_activity_rl">
+            <LinearLayout
+                style="@style/more_activity_ll">
+                <ImageView
+                    android:id="@+id/iv_trade_psd"
+                    style="@style/more_activity_icon"
+                    android:src="@drawable/right_no"/>
+                <TextView
+                    android:text="投资密码"
+                    style="@style/more_activity_tv_con" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_trade_psd"
+                android:text="未设置"
+                android:textColor="@color/gray"
+                android:layout_toLeftOf="@id/iv4"
+                android:layout_centerVertical="true"
+                style="@style/more_activity_tv_con" />
+            <ImageView
+                android:id="@+id/iv4"
+                style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <RelativeLayout
+            android:id="@+id/rl_email"
+            style="@style/more_activity_rl">
+            <LinearLayout
+                style="@style/more_activity_ll">
+                <ImageView
+                    android:id="@+id/iv_email_icon"
+                    style="@style/more_activity_icon"
+                    android:src="@drawable/right_no"/>
+                <TextView
+                    android:text="邮箱认证"
+                    style="@style/more_activity_tv_con" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_email"
+                android:text="未设置"
+                android:textColor="@color/gray"
+                android:layout_toLeftOf="@id/iv5"
+                android:layout_centerVertical="true"
+                style="@style/more_activity_tv_con" />
+            <ImageView
+                android:id="@+id/iv5"
+                style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+    </LinearLayout>
+
+</LinearLayout>

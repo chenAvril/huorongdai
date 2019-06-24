@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:background="@color/word_red"
+        android:textColor="@color/white"
+        android:gravity="center|bottom"
+        android:textSize="16dp"
+        android:text="回款累计收益"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/word_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_trade_amt"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="0.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:text="元"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--TabLayout布局，用于与ViewPager的联动-->
+    <android.support.design.widget.TabLayout
+        android:background="@color/word_red"
+        android:id="@+id/tab_return_money"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        app:tabTextAppearance="@style/TabLayoutTextSizeStyle"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/yellow"
+        app:tabSelectedTextColor="@color/yellow"
+        app:tabTextColor="@color/white" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_return_money"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

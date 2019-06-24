@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape  android:shape="rectangle">
+            <!-- 虚线边框的宽度，颜色等 -->
+            <stroke
+                android:dashGap="6dp"
+                android:dashWidth="6dp"
+                android:width="1dp"
+                android:color="#d7d1cd" >
+            </stroke>
+        </shape>
+    </item>
+</layer-list>

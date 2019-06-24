@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+   <com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView
+       android:id="@+id/xloading_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_margin="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:background="@color/big_red"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:paddingTop="5dp"
+                   android:paddingBottom="5dp"
+                   android:gravity="center_horizontal"
+                   android:text="合规事项"
+                   android:textSize="14dp"
+                   android:textColor="@color/white"
+                   android:layout_weight="2"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content" />
+               <View
+                   android:layout_width="60dp"
+                   android:layout_marginLeft="-30dp"
+                   android:layout_marginRight="-30dp"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/dash_view_vertical"
+                   android:layerType="software"/>
+               <TextView
+                   android:paddingTop="5dp"
+                   android:paddingBottom="5dp"
+                   android:gravity="center_horizontal"
+                   android:text="状态"
+                   android:textSize="14dp"
+                   android:textColor="@color/white"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/file_progress_rl"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+           </android.support.v7.widget.RecyclerView>
+       </LinearLayout>
+   </com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView>
+
+</RelativeLayout>

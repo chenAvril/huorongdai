@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_online_customer_service_white"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/word_dark"
+            android:text="我的推荐码："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_my_code"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/word_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_gray_round"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="3dp"
+            android:textSize="16dp"
+            android:textColor="@color/word_dark"
+            android:text="请您的好友扫描下面的二维码，注册成为您的推荐好友，可获得丰厚的推荐奖励哦！"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_below="@id/tv1"
+            android:layout_above="@id/tv_share"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="centerInside"
+                    android:src="@drawable/yaoqing_bg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp" />
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/iv_or_code"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp" />
+            </RelativeLayout>
+            <ImageView
+                android:scaleType="fitEnd"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/yaoqing_bg1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_share"
+            android:text="立即分享"
+            android:layout_alignParentBottom="true"
+            style="@style/btn_red_style"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"/>
+    </RelativeLayout>
+</LinearLayout>

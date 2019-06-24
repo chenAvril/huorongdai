@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="18dp"
+            android:textColor="@color/big_red"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="公司环境"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/company_info1"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/company_info2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/company_info3"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/company_info4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/company_info5"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/company_info6"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/company_info7"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/company_info8"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/company_info9"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/company_info10"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/company_info11"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/company_info12"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

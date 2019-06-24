@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/gray_bg">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_account_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_account_icon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/header"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        style="@style/icon_login_style"
+                        android:src="@drawable/zhanghu"/>
+                    <TextView
+                        android:text="账    户:"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:background="@null"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tv_cus_name"
+                        android:text="----"
+                        android:textSize="16dp"
+                        android:textColor="@color/word_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        style="@style/icon_login_style"
+                        android:src="@drawable/my_name"/>
+                    <TextView
+                        android:text="姓    名:"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tv_real_name"
+                        android:text="----"
+                        android:textSize="16dp"
+                        android:textColor="@color/word_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        style="@style/icon_login_style"
+                        android:src="@drawable/shenfenzheng"/>
+                    <TextView
+                        android:text="身份证:"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tv_ID_card"
+                        android:text="----"
+                        android:textSize="16dp"
+                        android:textColor="@color/word_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        style="@style/icon_login_style"
+                        android:src="@drawable/shoujihao"/>
+                    <TextView
+                        android:text="手机号:"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tv_cus_mobile"
+                        android:text="----"
+                        android:textSize="16dp"
+                        android:textColor="@color/word_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        style="@style/icon_login_style"
+                        android:src="@drawable/yinhangka_green"/>
+                    <TextView
+                        android:text="银行卡:"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tv_bank_card_id"
+                        android:text="----"
+                        android:textSize="16dp"
+                        android:textColor="@color/word_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        style="@style/icon_login_style"
+                        android:src="@drawable/yinhang"/>
+                    <TextView
+                        android:text="银    行:"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tv_bank_card_name"
+                        android:text="----"
+                        android:textSize="16dp"
+                        android:textColor="@color/word_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_exit_login"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="保存"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bule"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

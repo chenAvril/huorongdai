@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/compound"
+    android:background="@drawable/bg_online_customer_service_white"
+    android:padding="10dp">
+    
+    <TextView
+        android:textColor="@color/word_dark"
+        android:id="@+id/text"
+        android:layout_toLeftOf="@id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文本文字"
+        android:gravity="center_vertical"
+        android:textSize="16dp"
+        android:singleLine="true" />
+    <ImageView 
+        android:id="@+id/btn"
+        android:layout_alignParentRight="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/dropdown"
+        android:padding="4dp"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

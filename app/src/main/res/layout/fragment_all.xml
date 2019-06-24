@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_all_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/xloading_view">
+            <android.support.v7.widget.RecyclerView
+                android:background="@color/light_gray"
+                android:id="@+id/rl_all_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

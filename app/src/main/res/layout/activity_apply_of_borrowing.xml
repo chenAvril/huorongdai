@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_online_customer_service_white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            style="@style/open_acc_ll_one">
+            <TextView
+                android:layout_weight="2"
+                style="@style/open_acc_tv_left"
+                android:text="真实姓名:"/>
+            <LinearLayout
+                style="@style/open_acc_ll_two">
+                <TextView
+                    android:id="@+id/et_real_name"
+                    style="@style/open_acc_et" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <LinearLayout
+            style="@style/open_acc_ll_one">
+            <TextView
+                android:layout_weight="2"
+                style="@style/open_acc_tv_left"
+                android:text="手机号码:"/>
+            <LinearLayout
+                style="@style/open_acc_ll_two">
+                <TextView
+                    android:id="@+id/et_phone_number"
+                    style="@style/open_acc_et"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            style="@style/open_acc_ll_one">
+            <TextView
+                android:layout_weight="2"
+                style="@style/open_acc_tv_left"
+                android:text="短信验证:"/>
+            <RelativeLayout
+                style="@style/open_acc_ll_two">
+                <EditText
+                    style="@style/et_login_style"
+                    android:layout_marginLeft="0dp"
+                    android:id="@+id/et_borrow_yz"
+                    android:layout_toLeftOf="@id/tv_get_yz"
+                    android:hint="请输入验证码" />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16dp"
+                    android:id="@+id/tv_get_yz"
+                    android:textColor="@color/word_red"
+                    android:text="获取验证码"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/more_activity_tv_line"/>
+        <LinearLayout
+            style="@style/open_acc_ll_one">
+            <TextView
+                android:layout_weight="2"
+                style="@style/open_acc_tv_left"
+                android:text="融资金额:"/>
+            <RelativeLayout
+                style="@style/open_acc_ll_two">
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_toLeftOf="@id/tv_yuan"
+                    android:id="@+id/et_finance_amt"
+                    style="@style/open_acc_et"
+                    android:hint="请输入融资金额" />
+                <TextView
+                    android:id="@+id/tv_yuan"
+                    android:textSize="16dp"
+                    android:textColor="@color/word_gray"
+                    android:text="元"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <LinearLayout
+            style="@style/open_acc_ll_one">
+            <TextView
+                android:layout_weight="2"
+                style="@style/open_acc_tv_left"
+                android:text="融资期限:"/>
+            <RelativeLayout
+                style="@style/open_acc_ll_two">
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_toLeftOf="@id/tv_month"
+                    android:id="@+id/et_finance_time"
+                    style="@style/open_acc_et"
+                    android:hint="预计意向融资期限" />
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:textSize="16dp"
+                    android:textColor="@color/word_gray"
+                    android:text="月"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <LinearLayout
+            style="@style/open_acc_ll_one">
+            <TextView
+                android:layout_weight="2"
+                style="@style/open_acc_tv_left"
+                android:text="所在区域:"/>
+            <RelativeLayout
+                android:id="@+id/ll_area"
+                style="@style/open_acc_ll_two">
+                <TextView
+                    android:id="@+id/tv_area"
+                    style="@style/open_acc_et"
+                    android:layout_width="match_parent"
+                    android:layout_toLeftOf="@id/iv_icon"
+                    android:text="请选择所在区域" />
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="0dp"
+                    style="@style/more_activity_iv_right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        style="@style/btn_red_style"
+        android:id="@+id/btn_sure"
+        android:text="确认"/>
+</LinearLayout>

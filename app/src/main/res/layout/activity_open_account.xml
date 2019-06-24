@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/bg_online_customer_service_white"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                style="@style/open_acc_ll_one">
+                <TextView
+                    style="@style/open_acc_tv_left"
+                    android:text="真实姓名:"/>
+                <LinearLayout
+                    style="@style/open_acc_ll_two">
+                    <EditText
+                        android:text="陈磊"
+                        android:id="@+id/cus_real_name_et"
+                        style="@style/open_acc_et"
+                        android:hint="请输入您的真实姓名" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/more_activity_tv_line" />
+            <LinearLayout
+                style="@style/open_acc_ll_one">
+                <TextView
+                    style="@style/open_acc_tv_left"
+                    android:text="证件类型:"/>
+                <LinearLayout
+                    android:id="@+id/certificate_type_ll"
+                    style="@style/open_acc_ll_two">
+                    <TextView
+                        android:id="@+id/certificate_type_tv"
+                        style="@style/open_acc_et"
+                        android:hint="请选择您的证件类型" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        style="@style/more_activity_iv_right" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/more_activity_tv_line" />
+            <LinearLayout
+                style="@style/open_acc_ll_one">
+                <TextView
+                    style="@style/open_acc_tv_left"
+                    android:text="证件号码:"/>
+                <LinearLayout
+                    style="@style/open_acc_ll_two">
+                    <EditText
+                        android:id="@+id/certificate_number_tv"
+                        style="@style/open_acc_et"
+                        android:hint="请输入您的证件号码" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/more_activity_tv_line" />
+            <LinearLayout
+                style="@style/open_acc_ll_one">
+                <TextView
+                    style="@style/open_acc_tv_left"
+                    android:text="银行名称:"/>
+                <LinearLayout
+                    android:id="@+id/bank_name_ll"
+                    style="@style/open_acc_ll_two">
+                    <TextView
+                        android:id="@+id/bank_name_tv"
+                        style="@style/open_acc_et"
+                        android:hint="请选择银行名称" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        style="@style/more_activity_iv_right" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/more_activity_tv_line" />
+            <LinearLayout
+                style="@style/open_acc_ll_one">
+                <TextView
+                    style="@style/open_acc_tv_left"
+                    android:text="开户行地区:"/>
+                <LinearLayout
+                    android:id="@+id/bank_city_ll"
+                    style="@style/open_acc_ll_two">
+                    <TextView
+                        android:id="@+id/bank_city_tv"
+                        style="@style/open_acc_et"
+                        android:hint="请选择开户行地区" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        style="@style/more_activity_iv_right" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/more_activity_tv_line" />
+            <LinearLayout
+                style="@style/open_acc_ll_one">
+                <TextView
+                    style="@style/open_acc_tv_left"
+                    android:text="银行卡号:"/>
+                <LinearLayout
+                    style="@style/open_acc_ll_two">
+                    <EditText
+                        android:id="@+id/bank_card_number_et"
+                        android:inputType="number"
+                        style="@style/open_acc_et"
+                        android:hint="请输入银行卡号" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/more_activity_tv_line" />
+            <LinearLayout
+                style="@style/open_acc_ll_one">
+                <TextView
+                    style="@style/open_acc_tv_left"
+                    android:text="投资密码:"/>
+                <LinearLayout
+                    style="@style/open_acc_ll_two">
+                    <EditText
+                        android:id="@+id/trade_password_et"
+                        android:inputType="textPassword"
+                        style="@style/open_acc_et"
+                        android:hint="请输入投资密码(长度8-20位)" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/more_activity_tv_line" />
+            <LinearLayout
+                style="@style/open_acc_ll_one">
+                <TextView
+                    style="@style/open_acc_tv_left"
+                    android:text="确认密码:"/>
+                <LinearLayout
+                    style="@style/open_acc_ll_two">
+                    <EditText
+                        android:id="@+id/trade_password_sure_et"
+                        android:inputType="textPassword"
+                        style="@style/open_acc_et"
+                        android:hint="请再次输入投资密码" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_open_acc"
+            style="@style/btn_red_style"
+            android:text="认证开户"/>
+    </LinearLayout>
+</RelativeLayout>

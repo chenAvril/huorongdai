@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp320"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_ios"
+    android:orientation="vertical">
+    <TextView
+        android:text="签到领取积分"
+        android:id="@+id/activity_main_tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/word_gray"
+        android:textSize="@dimen/sp16" />
+
+    <com.example.administrator.huorongdai.view.SignCalendar
+        android:layout_margin="@dimen/dp10"
+        android:id="@+id/dialog_signview"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"/>
+
+    <LinearLayout
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/btn_red_gray_selector"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp6"
+        android:paddingBottom="@dimen/dp6">
+        <ImageView
+            android:src="@drawable/sgin_icon"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30" />
+        <TextView
+            android:id="@+id/sign_day_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.huorongdai.view.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@mipmap/aboutusbanner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/word_gray"
+            android:text="公司简介"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/gray"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:text="@string/aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/word_gray"
+            android:text="公司大事记"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_above="@id/circle_red1"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/circle_red1"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/circle_red"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:layout_below="@id/circle_red1"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/word_gray"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:text="2015年12月安徽恩泽资产管理有限公司成立"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_above="@id/circle_red2"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/circle_red2"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/circle_red"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:layout_below="@id/circle_red2"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/word_gray"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:text="2016年2月货融贷平台上线"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_above="@id/circle_red3"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/circle_red3"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/circle_red"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:layout_below="@id/circle_red3"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/word_gray"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:text="2016年4月货融贷平台注册人数突破5000人，入金突破1000000元"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_above="@id/circle_red4"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/circle_red4"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/circle_red"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:layout_below="@id/circle_red4"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/word_gray"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:text="2016年11月“重装起航“，货融贷更新升级第三方支付系统，为资金存管做准备"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_above="@id/circle_red5"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/circle_red5"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/circle_red"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:layout_below="@id/circle_red5"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/word_gray"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:text="2016年12月国资背景、注资千万级别Pre-A轮，货融贷正式拥有“国资背景”的背景平台"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_above="@id/circle_red6"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/circle_red6"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/circle_red"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:layout_below="@id/circle_red6"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/word_gray"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:text="2016年12月底首次货融贷实地考察"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_above="@id/circle_red7"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/circle_red7"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/circle_red"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:layout_below="@id/circle_red7"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/word_gray"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:text="2017年2月底网站整体改版升级"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_above="@id/circle_red8"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/circle_red8"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/circle_red"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:layout_below="@id/circle_red8"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/word_red"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/word_gray"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:text="2017年4月开始对接银行存管业务"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</com.example.administrator.huorongdai.view.MyScrollView>

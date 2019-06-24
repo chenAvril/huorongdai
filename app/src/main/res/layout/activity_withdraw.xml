@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.administrator.huorongdai.view.MyScrollView
+            android:id="@+id/msl_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv1"
+                        android:src="@drawable/zhanghuyve"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp" />
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/iv1"
+                        android:id="@+id/tv_chongzhi1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:text="账户余额："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_account_balance"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:enabled="false"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_toRightOf="@id/tv_chongzhi1"
+                        android:layout_toLeftOf="@id/tv_yuan1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_yuan1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:text="元"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv2"
+                        android:src="@drawable/renminbi"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp" />
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/iv2"
+                        android:id="@+id/tv_chongzhi2"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:text="提现金额："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_withdraw_money"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:numeric="decimal"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_toRightOf="@id/tv_chongzhi2"
+                        android:layout_toLeftOf="@id/tv_yuan2"
+                        android:hint="请输入提现金额"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_yuan2"
+                        android:layout_marginLeft="6dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:text="元"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv3"
+                        android:src="@drawable/shijidaozhang"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp" />
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/iv3"
+                        android:id="@+id/tv_chongzhi3"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:text="实际到账："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_money_to_account"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_toRightOf="@id/tv_chongzhi3"
+                        android:layout_toLeftOf="@id/tv_yuan3"
+                        android:hint="(提现手续费为2元/笔)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_yuan3"
+                        android:layout_marginLeft="6dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/word_dark"
+                        android:textSize="16dp"
+                        android:text="元"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btn_withdraw"
+                    style="@style/btn_red_style"
+                    android:text="提现" />
+
+                <TextView
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#a4a4a4"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/withdraw_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </com.example.administrator.huorongdai.view.MyScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

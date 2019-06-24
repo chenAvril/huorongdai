@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <TextView
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:id="@+id/tv1"
+        android:textSize="14dp"
+        android:textColor="@color/word_gray"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+    <com.example.administrator.huorongdai.view.TimeLineView
+        app:time_line_radius="5dp"
+        app:time_line_width="1dp"
+        android:id="@+id/time_line_view"
+        android:layout_width="30dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:paddingRight="10dp"
+        android:id="@+id/tv2"
+        android:textSize="14dp"
+        android:textColor="@color/word_gray"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

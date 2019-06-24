@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">36.66dp</dimen>
+
+    <!-- 顶部按钮padding -->
+    <dimen name="pickerview_topbar_padding">16.6dp</dimen>
+
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">14.16sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">15sp</dimen>
+    <!-- 选项文字大小 -->
+    <dimen name="pickerview_textsize">16.66sp</dimen>
+
+    <dimen name="pattern_lock_path_width">2.5dp</dimen>
+    <dimen name="pattern_lock_dot_size">8.33dp</dimen>
+    <dimen name="pattern_lock_dot_selected_size">20dp</dimen>
+
+    <dimen name="dp3">2.5dp</dimen>
+    <dimen name="dp6">5dp</dimen>
+    <dimen name="dp8">6.66dp</dimen>
+    <dimen name="dp10">8.33dp</dimen>
+    <dimen name="dp14">11.66dp</dimen>
+    <dimen name="dp16">13.3dp</dimen>
+    <dimen name="dp20">16.66dp</dimen>
+    <dimen name="dp26">21.66dp</dimen>
+    <dimen name="dp30">26dp</dimen>
+    <dimen name="dp36">30dp</dimen>
+    <dimen name="dp40">32.5dp</dimen>
+    <dimen name="dp46">42dp</dimen>
+    <dimen name="dp50">46dp</dimen>
+    <dimen name="dp60">50dp</dimen>
+    <dimen name="dp70">60dp</dimen>
+    <dimen name="dp80">66.66dp</dimen>
+    <dimen name="dp120">100dp</dimen>
+    <dimen name="dp180">156dp</dimen>
+    <dimen name="dp200">166.66dp</dimen>
+    <dimen name="dp300">300dp</dimen>
+    <dimen name="dp320">266.66dp</dimen>
+    <dimen name="dp360">300dp</dimen>
+    <dimen name="dp500">416.66dp</dimen>
+
+
+    <dimen name="sp10">7sp</dimen>
+    <dimen name="sp12">8.5sp</dimen>
+    <dimen name="sp14">10sp</dimen>
+    <dimen name="sp16">11sp</dimen>
+    <dimen name="sp18">13sp</dimen>
+    <dimen name="sp20">15.5sp</dimen>
+    <dimen name="sp38">28sp</dimen>
+
+</resources>

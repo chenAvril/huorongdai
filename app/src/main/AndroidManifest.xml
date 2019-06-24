@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.administrator.huorongdai">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> -->
+    <!-- <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" /> -->
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="designwidth"
+            android:value="1080" />
+        <meta-data
+            android:name="designdpi"
+            android:value="480" />
+        <meta-data
+            android:name="fontsize"
+            android:value="1.0" />
+        <meta-data
+            android:name="unit"
+            android:value="dp" />
+
+        <activity android:name=".activity.SpareActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.HtmlActivity" />
+        <activity android:name=".activity.NoticeDetailActivity" />
+        <activity android:name=".activity.HuodongActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.ForgetPswActivity" />
+        <activity android:name=".activity.ProductDetailActivity" />
+        <activity android:name=".activity.MoreActivity" />
+        <activity android:name=".activity.OpenAccountActivity" />
+        <activity android:name=".activity.SetPswActivity" />
+        <activity android:name=".activity.LookMoneyActivity" />
+        <activity android:name=".activity.TouziManagerActivity" />
+        <activity android:name=".activity.DealManagerActivity" />
+        <activity android:name=".activity.MyMessageActivity" />
+        <activity android:name=".activity.MyRedPacketActivity" />
+        <activity android:name=".activity.AccountSafeActivity" />
+        <activity android:name=".activity.BorrowingRecordActivity" />
+        <activity android:name=".activity.ApplyOfBorrowingActivity" />
+        <activity android:name=".activity.AccountInfoActivity" />
+        <activity android:name=".activity.OpenAccountSuccessActivity" />
+        <activity
+            android:name=".activity.RechargeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.WithdrawActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.BidRecordActivity" />
+        <activity android:name=".activity.ReturnMoneyActivity" />
+        <activity android:name=".activity.MoneyRecordActivity" />
+        <activity android:name=".activity.DealRecordActivity" />
+        <activity android:name=".activity.ImagePagerActivity" />
+        <activity android:name=".activity.WebSiteMsgActivity" />
+        <activity android:name=".activity.ReadLetterActivity" />
+        <activity android:name=".activity.NewsListActivity" />
+        <activity android:name=".activity.ReadNewsActivity" />
+        <activity android:name=".activity.InviteRecordActivity" />
+        <activity android:name=".activity.ChooseRedPackageActivity" />
+        <activity android:name=".activity.IDCardActivity" />
+        <activity android:name=".activity.ChangePasswordActivity" />
+        <activity android:name=".activity.FindTradePwdActivity" />
+        <activity android:name=".activity.BindingEmailActivity" />
+        <activity android:name=".activity.BorrowFindActivity" />
+        <activity android:name=".activity.BorrowSuccessActivity" />
+        <activity android:name=".activity.LatestNoticeActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.MyIntegralActivity" />
+
+        <provider
+            android:name=".util.update.MNUpdateApkFileProvider"
+            android:authorities="${applicationId}.updateFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/mn_update_file_provider" />
+        </provider>
+
+        <activity android:name=".activity.GuideActivity" />
+        <activity android:name=".activity.HandLockActivity" />
+        <activity android:name=".activity.LockSettingActivity" />
+        <activity android:name=".activity.HelpCenterActivity" />
+        <activity android:name=".activity.OnlineCustomerServiceActivity" />
+        <activity android:name=".activity.BidDetailActivity" />
+        <activity android:name=".activity.ProIntroductionActivity" />
+        <activity android:name=".activity.LoanInvestListActivity" />
+        <activity android:name=".activity.RepaymentPlanActivity" />
+        <activity android:name=".activity.RiskControlActivity" />
+        <activity android:name=".activity.MyFriendActivity" />
+        <activity android:name=".activity.SignActivity" />
+        <activity android:name=".activity.HelpInfoActivity" />
+        <activity android:name=".activity.IntegralShopActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.CalculatorActivity" />
+        <activity android:name=".activity.ReturnPlanActivity" />
+        <activity android:name=".activity.ReturnDetailActivity" />
+        <activity android:name=".activity.BorrowedDetailActivity" />
+        <activity android:name=".activity.PrizeActivity" />
+        <activity android:name=".activity.PrizeDetailActivity" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".activity.InformationDisclosureActivity" />
+        <activity android:name=".activity.FarenInfoActivity" />
+        <activity android:name=".activity.CompanyProfileActivity" />
+        <activity android:name=".activity.FileProgressActivity" />
+        <activity android:name=".activity.TeamManagerActivity" />
+        <activity android:name=".activity.PartnersActivity" />
+        <activity android:name=".activity.RunReportActivity" />
+        <activity android:name=".activity.BaseInformationActivity"></activity>
+    </application>
+
+</manifest>

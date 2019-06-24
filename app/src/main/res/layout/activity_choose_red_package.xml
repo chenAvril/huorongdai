@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xloading_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_choose_red_package"
+            android:layout_above="@id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rl_choose_red_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <Button
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_sure"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:text="暂不使用优惠券"
+            android:background="@drawable/bg_round_gray"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView>

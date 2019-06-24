@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="账户余额:"
+                android:textSize="16dp"
+                android:textColor="@color/word_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_account_balance"
+                    android:text="0.00"
+                    android:textSize="16dp"
+                    android:textColor="@color/word_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="元"
+                    android:textSize="16dp"
+                    android:textColor="@color/word_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="可投金额:"
+                android:textSize="16dp"
+                android:textColor="@color/word_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_can_be_cast"
+                    android:text="0"
+                    android:textSize="16dp"
+                    android:textColor="@color/word_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="元"
+                    android:textSize="16dp"
+                    android:textColor="@color/word_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <RelativeLayout
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="投资金额:"
+                android:textSize="16dp"
+                android:textColor="@color/word_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.example.administrator.huorongdai.view.AmountView
+                android:layout_alignParentRight="true"
+                android:id="@+id/amount_view"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right"
+                app:btnTextSize="12dp"
+                app:btnWidth="32dp"
+                app:tvWidth="74dp"/>
+        </RelativeLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="预计收益:"
+                android:textSize="16dp"
+                android:textColor="@color/word_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_earning"
+                    android:text="0.0"
+                    android:textSize="16dp"
+                    android:textColor="@color/word_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="元"
+                    android:textSize="16dp"
+                    android:textColor="@color/word_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_line"
+            style="@style/more_activity_tv_line" />
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/ll_red_packet"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="使用红包:"
+                android:textSize="16dp"
+                android:textColor="@color/word_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/ll_choose_red_package"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_red_package"
+                    android:text="请选择红包"
+                    android:textSize="16dp"
+                    android:textColor="@color/word_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@drawable/right_gray"
+                    android:layout_height="20dp"
+                    android:layout_width="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <LinearLayout
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="投资密码:"
+                android:textSize="16dp"
+                android:textColor="@color/word_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="16dp"
+                android:inputType="textPassword"
+                android:id="@+id/et_trade_psw"
+                android:gravity="center"
+                android:hint="请输入投资密码"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_investment_sure"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="确定"
+        android:background="@color/word_red"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+</LinearLayout>

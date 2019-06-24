@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/xloading_view">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/huodong_srl">
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/light_gray"
+            android:id="@+id/huodong_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView>

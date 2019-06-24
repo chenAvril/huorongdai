@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_cus_name"
+            android:textSize="14dp"
+            android:textColor="@color/word_gray"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_red_package"
+            android:textSize="14dp"
+            android:textColor="@color/word_gray"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_jifen"
+            android:textSize="14dp"
+            android:textColor="@color/word_gray"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_money"
+            android:textSize="16dp"
+            android:textColor="@color/word_gray"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

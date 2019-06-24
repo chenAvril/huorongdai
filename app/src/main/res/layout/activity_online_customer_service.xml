@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_kefu_phone"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/bg_online_customer_service_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_phone_bule"
+            android:src="@drawable/phone_bule"
+            android:layout_width="34dp"
+            android:layout_height="34dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/word_dark"
+            android:textSize="16dp"
+            android:text="客服电话：400-0703-188"
+            android:layout_toRightOf="@id/iv_phone_bule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_gray" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_tousu_phone"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/bg_online_customer_service_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_phone_red"
+            android:src="@drawable/phone_red"
+            android:layout_width="34dp"
+            android:layout_height="34dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/word_dark"
+            android:textSize="16dp"
+            android:text="投诉电话：0551-69106647"
+            android:layout_toRightOf="@id/iv_phone_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_gray" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_online_customer_service_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_weixin"
+                android:src="@drawable/weixin"
+                android:layout_width="34dp"
+                android:layout_height="34dp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/word_dark"
+                android:textSize="16dp"
+                android:text="公众号："
+                android:layout_toRightOf="@id/iv_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <ImageView
+            android:src="@mipmap/weixin_qrcode"
+            android:layout_width="match_parent"
+            android:layout_height="240dp" />
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textColor="@color/word_dark"
+            android:textSize="16dp"
+            android:text="恩泽资产"
+            android:layout_toRightOf="@id/iv_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

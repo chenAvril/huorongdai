@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xloading_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/gray_bg"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.administrator.huorongdai.view.MyScrollView
+            android:background="@drawable/bg_online_customer_service_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/word_dark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/tv_read_letter_title"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/more_activity_tv_line" />
+                <TextView
+                    android:textColor="@color/word_gray"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/tv_read_letter_time"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/word_gray"
+                    android:layout_margin="10dp"
+                    android:id="@+id/tv_read_letter_content"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </com.example.administrator.huorongdai.view.MyScrollView>
+    </LinearLayout>
+</com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView>

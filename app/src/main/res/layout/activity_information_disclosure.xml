@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_online_customer_service_white"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/more_activity_rl"
+            android:id="@+id/rl_company_profile">
+
+            <TextView
+                style="@style/more_activity_tv_con"
+                android:text="公司简介" />
+
+            <ImageView style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+
+        <TextView style="@style/more_activity_tv_line" />
+
+        <RelativeLayout style="@style/more_activity_rl"
+            android:id="@+id/base_information_rl">
+
+            <TextView
+                style="@style/more_activity_tv_con"
+                android:text="基本信息" />
+
+            <ImageView style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+
+        <TextView style="@style/more_activity_tv_line" />
+
+        <RelativeLayout style="@style/more_activity_rl"
+            android:id="@+id/rl_person_info">
+
+            <TextView
+                style="@style/more_activity_tv_con"
+                android:text="法人信披" />
+
+            <ImageView style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+
+        <TextView style="@style/more_activity_tv_line" />
+
+        <RelativeLayout style="@style/more_activity_rl"
+            android:id="@+id/file_progress_rl">
+
+            <TextView
+                style="@style/more_activity_tv_con"
+                android:text="备案进度" />
+
+            <ImageView style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+
+        <TextView style="@style/more_activity_tv_line" />
+
+        <RelativeLayout style="@style/more_activity_rl"
+            android:id="@+id/team_manager_rl">
+
+            <TextView
+                style="@style/more_activity_tv_con"
+                android:text="团队高管" />
+
+            <ImageView style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+
+        <TextView style="@style/more_activity_tv_line" />
+
+        <RelativeLayout style="@style/more_activity_rl"
+            android:id="@+id/risk_education_rl">
+
+            <TextView
+                style="@style/more_activity_tv_con"
+                android:text="风险教育" />
+
+            <ImageView style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+
+        <TextView style="@style/more_activity_tv_line" />
+
+        <RelativeLayout style="@style/more_activity_rl"
+            android:id="@+id/knowledge_rl">
+
+            <TextView
+                style="@style/more_activity_tv_con"
+                android:text="网贷知识" />
+
+            <ImageView style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+
+        <TextView style="@style/more_activity_tv_line" />
+
+        <RelativeLayout style="@style/more_activity_rl"
+            android:id="@+id/partners_rl">
+
+            <TextView
+                style="@style/more_activity_tv_con"
+                android:text="合作伙伴" />
+
+            <ImageView style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+
+        <TextView style="@style/more_activity_tv_line" />
+
+        <RelativeLayout style="@style/more_activity_rl"
+            android:id="@+id/run_report_rl">
+
+            <TextView
+                style="@style/more_activity_tv_con"
+                android:text="运营报告" />
+
+            <ImageView style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+
+        <TextView style="@style/more_activity_tv_line" />
+
+        <RelativeLayout style="@style/more_activity_rl"
+            android:id="@+id/ll_latest_notes">
+
+            <TextView
+                style="@style/more_activity_tv_con"
+                android:text="平台公告" />
+
+            <ImageView style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+
+        <TextView style="@style/more_activity_tv_line" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

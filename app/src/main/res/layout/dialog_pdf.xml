@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView
+        android:id="@+id/xloading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/pdf_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <es.voghdev.pdfviewpager.library.PDFViewPager
+                    android:id="@+id/pdfViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <com.example.administrator.huorongdai.view.ZoomImageView
+                android:id="@+id/zoom_image_view"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </com.example.administrator.huorongdai.xframe.widget.loadingview.XLoadingView>
+</RelativeLayout>

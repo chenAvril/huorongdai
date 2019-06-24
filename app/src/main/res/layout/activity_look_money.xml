@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_look_money"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/gray_bg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/word_red"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_total_asset"
+                    android:textColor="@color/white"
+                    android:textSize="36dp"
+                    android:text="0.00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:text="资产总额(元)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/look_money_tv_left"
+                        android:text="可用余额" />
+                    <TextView
+                        android:id="@+id/tv_availAmt"
+                        style="@style/look_money_tv_right" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/look_money_tv_left"
+                        android:text="冻结金额" />
+                    <TextView
+                        android:id="@+id/tv_frzAmt"
+                        style="@style/look_money_tv_right" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/look_money_tv_left"
+                        android:text="待收本金" />
+                    <TextView
+                        android:id="@+id/tv_unEarnCaptial"
+                        style="@style/look_money_tv_right" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@drawable/bg_online_customer_service_white"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/look_money_tv_left"
+                        android:text="待收利息" />
+                    <TextView
+                        android:id="@+id/tv_unEarnIint"
+                        style="@style/look_money_tv_right" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/btn_red_style"
+                        android:id="@+id/btn_recharge"
+                        android:text="充值"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/btn_withdraw"
+                        style="@style/btn_red_style"
+                        android:textColor="@color/word_red"
+                        android:text="提现"
+                        android:background="@drawable/btn_white_line"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+    <LinearLayout
+        android:background="@drawable/bg_online_customer_service_white"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_deal_money_packet"
+            style="@style/more_activity_rl">
+            <LinearLayout
+                style="@style/more_activity_ll">
+                <ImageView
+                    style="@style/more_activity_icon"
+                    android:src="@drawable/money_package_gray"/>
+                <TextView
+                    android:id="@+id/tv_deal_money_packet"
+                    android:text="充值提现"
+                    style="@style/more_activity_tv_con" />
+            </LinearLayout>
+            <ImageView
+                style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+        <TextView
+            style="@style/more_activity_tv_line" />
+        <RelativeLayout
+            android:id="@+id/rl_deal_record"
+            style="@style/more_activity_rl">
+            <LinearLayout
+                style="@style/more_activity_ll">
+                <ImageView
+                    android:src="@drawable/deal_record_gray"
+                    style="@style/more_activity_icon" />
+                <TextView
+                    android:id="@+id/tv_deal_record"
+                    android:text="交易记录"
+                    style="@style/more_activity_tv_con" />
+            </LinearLayout>
+            <ImageView
+                style="@style/more_activity_iv_right" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
