@@ -3,6 +3,7 @@ package com.example.administrator.huorongdai.activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
+import android.os.Process;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 import android.view.ViewGroup;
@@ -195,6 +196,7 @@ public class ReadNewsActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
+        super.onDestroy();
         // 销毁 WebView
         if (mWebView != null) {
             ViewGroup viewGroup = (ViewGroup) mWebView.getParent();
@@ -214,6 +216,7 @@ public class ReadNewsActivity extends BaseActivity {
 
         //如果参数为null的话，会将所有的Callbacks和Messages全部清除掉。
         handler.removeCallbacksAndMessages( null );
-        super.onDestroy();
+
+        //Process.killProcess(Process.myPid());
     }
 }

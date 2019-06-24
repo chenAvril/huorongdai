@@ -152,14 +152,13 @@ public class SmallMicroFragment extends LazyLoadFragment {
                 }
             }
         });
-
+        refreshLayout.setRefreshing(true);
+        refreshListener.onRefresh();
     }
 
     @Override
     public void lazyLoad() {
-        XPreferencesUtils.put("isProjectFlag","small");
-        refreshLayout.setRefreshing(true);
-        refreshListener.onRefresh();
+
     }
 
     //数据请求

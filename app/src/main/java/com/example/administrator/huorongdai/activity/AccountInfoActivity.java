@@ -133,14 +133,9 @@ public class AccountInfoActivity extends BaseActivity implements TakePhoto.TakeR
                 XToast.normal("网络连接失败!");
             }
 
-            handler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    if(refreshLayout.isRefreshing()){
-                        refreshLayout.setRefreshing(false);
-                    }
-                }
-            },1000);
+            if(refreshLayout.isRefreshing()){
+                refreshLayout.setRefreshing(false);
+            }
         }
     };
 
@@ -408,6 +403,7 @@ public class AccountInfoActivity extends BaseActivity implements TakePhoto.TakeR
         takePhotoTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {//拍照
+                dialogIcon.dismiss();
                 File file=new File(Environment.getExternalStorageDirectory(), "/temp/"+System.currentTimeMillis() + ".jpg");
                 if (!file.getParentFile().exists())file.getParentFile().mkdirs();
                 Uri imageUri = Uri.fromFile(file);
@@ -419,6 +415,7 @@ public class AccountInfoActivity extends BaseActivity implements TakePhoto.TakeR
         photoAlbumTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {//相册
+                dialogIcon.dismiss();
                 File file=new File(Environment.getExternalStorageDirectory(), "/temp/"+System.currentTimeMillis() + ".jpg");
                 if (!file.getParentFile().exists())file.getParentFile().mkdirs();
                 configCompress(takePhoto);
@@ -460,5 +457,11 @@ public class AccountInfoActivity extends BaseActivity implements TakePhoto.TakeR
                 .create();
 
         takePhoto.onEnableCompress(config,showProgressBar);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        handler.removeCallbacksAndMessages(null);
     }
 }

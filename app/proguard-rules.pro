@@ -107,7 +107,7 @@
 -keep class sun.misc.Unsafe { *; }
 -keep class com.example.administrator.huorongdai.gsonbean.** { *; }  ##这里需要改成解析到哪个  javabean
 ##---------------End: proguard configuration for Gson  ----------
-
+-keep class com.example.administrator.huorongdai.eventbusbean.** { *; }
 
 #webview和js交互混淆
 -keepclassmembers class com.example.administrator.huorongdai.HtmlActivity {

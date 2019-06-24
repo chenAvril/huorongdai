@@ -58,6 +58,7 @@ public class SettingActivity extends BaseActivity {
         @Override
         public boolean handleMessage(Message message) {
             tvSize.setText("(大小："+size+")");
+            handler.removeCallbacks(myThread);
             return true;
         }
     }
@@ -86,7 +87,7 @@ public class SettingActivity extends BaseActivity {
         tvUpdate2.setText("V  "+ XAppUtils.getVersionName(this));
         clearType=1;
         myThread=new MyThread(this);
-        myThread.start();
+        handler.post(myThread);
     }
 
     @Override
@@ -103,8 +104,7 @@ public class SettingActivity extends BaseActivity {
             case R.id.rl_clear_cache://清除缓存
                 try {
                     clearType=2;
-                    //myThread=new MyThread(this);
-                    myThread.start();
+                    handler.post(myThread);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -321,14 +321,14 @@ public class SettingActivity extends BaseActivity {
             if(clearType==1){
                 size= DataCleanManager.getTotalCacheSize(getApplication());
             }else if(clearType==2){
-                DataCleanManager.clearAllCache(SettingActivity.this);
+                DataCleanManager.clearAllCache(this);
                 size=DataCleanManager.getTotalCacheSize(getApplication());
             }
 
+            handler.sendMessage(Message.obtain());
         } catch (Exception e) {
             e.printStackTrace();
         }
-        handler.sendMessage(Message.obtain());
     }
     private static class MyThread extends Thread {
         WeakReference<SettingActivity> mThreadActivityRef;

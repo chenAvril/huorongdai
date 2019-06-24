@@ -58,6 +58,9 @@ public class LoginActivity extends BaseActivity {
         btnLogin.setOnClickListener(this);
         tvRegister.setOnClickListener(this);
         tvForgetPsw.setOnClickListener(this);
+
+        etUserNumber.setText("13515661980");
+        etUserPsw.setText("fang123456");
     }
 
     @Override
@@ -96,7 +99,8 @@ public class LoginActivity extends BaseActivity {
     private void requestLogin(String userNumber, String psw) {
         Map<String,Object > params =new HashMap<>();
         params .put("custMobile",userNumber);
-        params .put("custPwd", XEncryptUtils.MD5(psw));
+//        params .put("custPwd", XEncryptUtils.MD5(psw));
+        params .put("custPwd", psw);
         params .put("optSource","4");
         XHttp.obtain().post(Path.login_url, params, new HttpCallBack<UserBean>() {
             @Override

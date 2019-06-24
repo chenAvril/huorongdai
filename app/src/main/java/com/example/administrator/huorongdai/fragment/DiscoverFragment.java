@@ -32,23 +32,10 @@ import com.example.administrator.huorongdai.xframe.utils.XPreferencesUtils;
  */
 public class DiscoverFragment extends LazyLoadFragment implements View.OnClickListener {
 
-    private static DiscoverFragment fragment;
-
     public DiscoverFragment() {
 
     }
 
-    public static DiscoverFragment getInstance(){
-        if(fragment==null){
-            synchronized (DiscoverFragment.class){
-                if(fragment==null){
-                    fragment=new DiscoverFragment();
-                }
-            }
-        }
-
-        return fragment;
-    }
     private boolean isLogin;//true已登录，false未登录
     private CustomDialog dialog;//用户登录提示框
 
@@ -102,7 +89,6 @@ public class DiscoverFragment extends LazyLoadFragment implements View.OnClickLi
 
     @Override
     public void lazyLoad() {
-        XPreferencesUtils.put("isRefreshFlag","discover");
     }
 
     @Override

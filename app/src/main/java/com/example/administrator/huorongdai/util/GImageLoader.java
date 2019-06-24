@@ -4,6 +4,7 @@ import android.content.Context;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.administrator.huorongdai.view.banner.loader.ImageLoader;
 
 /**
@@ -17,8 +18,8 @@ public class GImageLoader  extends ImageLoader {
         //Glide 加载图片简单用法
         Glide.with(context)
                 .load(path)
-                //.skipMemoryCache(true)//跳过内存缓存。
-                //.diskCacheStrategy(DiskCacheStrategy.NONE)//不要在disk硬盘中缓存
+                .skipMemoryCache(true)//跳过内存缓存。
+                .diskCacheStrategy(DiskCacheStrategy.RESULT)//不要在disk硬盘中缓存
                 .crossFade()
                 .into(imageView);
     }

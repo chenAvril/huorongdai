@@ -145,15 +145,14 @@ public class NewHandFragment extends LazyLoadFragment {
                 }
             }
         });
-
+        refreshLayout.setRefreshing(true);
+        refreshListener.onRefresh();
     }
 
 
     @Override
     public void lazyLoad() {
-        XPreferencesUtils.put("isProjectFlag","newhand");
-        refreshLayout.setRefreshing(true);
-        refreshListener.onRefresh();
+
     }
 
     SwipeRefreshLayout.OnRefreshListener refreshListener=new SwipeRefreshLayout.OnRefreshListener() {

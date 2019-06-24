@@ -44,22 +44,9 @@ import java.util.Map;
  */
 public class MyFragment extends LazyLoadFragment implements View.OnClickListener{
 
-    private static MyFragment fragment;
 
     public MyFragment() {
 
-    }
-
-    public static MyFragment getInstance(){
-        if(fragment==null){
-            synchronized (MyFragment.class){
-                if(fragment==null){
-                    fragment=new MyFragment();
-                }
-            }
-        }
-
-        return fragment;
     }
 
     private SwipeRefreshLayout refreshLayout;
@@ -170,15 +157,16 @@ public class MyFragment extends LazyLoadFragment implements View.OnClickListener
         circleTransform=new GlideCircleTransform(getActivity());
         decimal=new DecimalFormat("0.00");
         dialog = new CustomDialog(getActivity(), R.style.custom_dialog2, R.layout.login_notice);
-    }
 
-    @Override
-    public void lazyLoad() {
-        XPreferencesUtils.put("isRefreshFlag","my");
         isLogin= (boolean) XPreferencesUtils.get("isLogin",false);
         openStatus= (int) XPreferencesUtils.get("openStatus",4);
         refreshLayout.setRefreshing(true);
         refreshListener.onRefresh();
+    }
+
+    @Override
+    public void lazyLoad() {
+
     }
 
     //登录提示框

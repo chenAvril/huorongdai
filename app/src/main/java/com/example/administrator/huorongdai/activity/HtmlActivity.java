@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.Process;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
@@ -296,6 +297,8 @@ public class HtmlActivity extends BaseActivity {
 
         //如果参数为null的话，会将所有的Callbacks和Messages全部清除掉。
         handler.removeCallbacksAndMessages( null );
+
+        //Process.killProcess(Process.myPid());
     }
 
 

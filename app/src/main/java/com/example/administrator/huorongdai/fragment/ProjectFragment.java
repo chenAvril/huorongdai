@@ -11,7 +11,12 @@ import android.widget.TextView;
 
 import com.example.administrator.huorongdai.R;
 import com.example.administrator.huorongdai.base.LazyLoadFragment;
+import com.example.administrator.huorongdai.eventbusbean.Msg;
 import com.example.administrator.huorongdai.xframe.utils.XPreferencesUtils;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,19 +26,8 @@ import java.util.List;
  */
 public class ProjectFragment extends LazyLoadFragment implements View.OnClickListener {
 
-    private static ProjectFragment fragment;
     public ProjectFragment(){
 
-    }
-    public static ProjectFragment getInstance() {
-        if (fragment == null) {
-            synchronized (ProjectFragment.class) {
-                if (fragment == null) {
-                    fragment = new ProjectFragment();
-                }
-            }
-        }
-        return fragment;
     }
 
     private TextView textview2,textview3,textview4;
@@ -51,7 +45,7 @@ public class ProjectFragment extends LazyLoadFragment implements View.OnClickLis
 
     @Override
     protected void initViews() {
-
+        EventBus.getDefault().register(this);
         smallMicroFragment=SmallMicroFragment.getInstance();
         comprehensiveFragment=ComprehensiveFragment.getInstance();
         newHandFragment=NewHandFragment.getInstance();
@@ -96,20 +90,6 @@ public class ProjectFragment extends LazyLoadFragment implements View.OnClickLis
 
     @Override
     public void lazyLoad() {
-        XPreferencesUtils.put("isRefreshFlag","project");
-
-        switch (viewPager.getCurrentItem()){
-            case 0:
-                smallMicroFragment.lazyLoad();
-                break;
-            case 1:
-                comprehensiveFragment.lazyLoad();
-                break;
-            case 2:
-                newHandFragment.lazyLoad();
-                break;
-        }
-
     }
 
     @Override
@@ -152,6 +132,20 @@ public class ProjectFragment extends LazyLoadFragment implements View.OnClickLis
                 viewPager.setCurrentItem(2);
                 break;
         }
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void getMsg(Msg message){
+        String msg=message.getMsg();
+        if("5".equals(msg)){//活动详情HtmlActivity页面跳转到投资页面
+            viewPager.setCurrentItem(0);
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
     }
 
     class FragmentAdapter extends FragmentPagerAdapter {

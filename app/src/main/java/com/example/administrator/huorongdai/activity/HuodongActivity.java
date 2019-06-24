@@ -17,6 +17,7 @@ import com.example.administrator.huorongdai.base.BaseActivity;
 import com.example.administrator.huorongdai.gsonbean.HuodongBean;
 import com.example.administrator.huorongdai.util.ButtonUtils;
 import com.example.administrator.huorongdai.xframe.adapter.XRecyclerViewAdapter;
+import com.example.administrator.huorongdai.xframe.utils.XEmptyUtils;
 import com.example.administrator.huorongdai.xframe.utils.XNetworkUtils;
 import com.example.administrator.huorongdai.xframe.utils.http.HttpCallBack;
 import com.example.administrator.huorongdai.xframe.utils.http.XHttp;
@@ -140,7 +141,7 @@ public class HuodongActivity extends BaseActivity {
                     adapter.clear();
                     adapter.isLoadMore(true);
                 }
-                if(huodongBean.getList().size()>0){
+                if(!XEmptyUtils.isEmpty(huodongBean.getList()) && huodongBean.getList().size()>0){
                     for (HuodongBean.ListBean bean : huodongBean.getList()) {
                         //activesStatus[1-进行中 2-已结束 3-预启用（注：预启用不显示）]
                         if(3!=bean.getActivesStatus()){

@@ -43,7 +43,7 @@ public class GlideImageLoader implements ImageLoader {
         Glide.with(mContext)
                 .load(imageUrl)
                 .skipMemoryCache(true)
-                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .diskCacheStrategy(DiskCacheStrategy.RESULT)
                 .crossFade()
                 .transform((BitmapTransformation) transformation)
                 .into(imageView);

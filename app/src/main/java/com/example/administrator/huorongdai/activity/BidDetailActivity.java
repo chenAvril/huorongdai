@@ -423,4 +423,10 @@ public class BidDetailActivity extends BaseActivity {
         }
         return isBigger;
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        handler.removeCallbacksAndMessages(null);
+    }
 }

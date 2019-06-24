@@ -40,7 +40,9 @@ import com.example.administrator.huorongdai.adapter.AllFragmentAdapter;
 import com.example.administrator.huorongdai.adapter.MyGridLayoutManager;
 import com.example.administrator.huorongdai.adapter.NoticeAdapter;
 import com.example.administrator.huorongdai.base.LazyLoadFragment;
+import com.example.administrator.huorongdai.eventbusbean.Msg;
 import com.example.administrator.huorongdai.eventbusbean.NoticeModel;
+import com.example.administrator.huorongdai.eventbusbean.UpdateBean;
 import com.example.administrator.huorongdai.gsonbean.BannerBean;
 import com.example.administrator.huorongdai.gsonbean.CheckVersionBean;
 import com.example.administrator.huorongdai.gsonbean.LoanAllBean;
@@ -66,6 +68,10 @@ import com.example.administrator.huorongdai.xframe.utils.permission.XPermission;
 import com.example.administrator.huorongdai.xframe.utils.statusbar.XStatusBar;
 import com.example.administrator.huorongdai.xframe.widget.XToast;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -78,19 +84,7 @@ import static com.example.administrator.huorongdai.xframe.utils.statusbar.XStatu
  */
 public class HomeFragment extends LazyLoadFragment implements View.OnClickListener {
 
-    private static HomeFragment fragment;
     public HomeFragment() {
-    }
-
-    public static HomeFragment getInstance(){
-        if(fragment==null){
-            synchronized (HomeFragment.class){
-                if(fragment==null){
-                    fragment=new HomeFragment();
-                }
-            }
-        }
-        return fragment;
     }
 
     private Banner banner;//banner控件
@@ -186,29 +180,32 @@ public class HomeFragment extends LazyLoadFragment implements View.OnClickListen
                 banner.startAutoPlay();
             }else if(msg.what==2){//通知banner设置数据
                 requestRecommendLoan();
-                if(adapter==null){
-                    adapter=new NoticeAdapter(noticeMs);
-                    noticeBanner.setAdapter(adapter);
-                }
-
-                if(noticeBanner.getAdapter()==null){
+                if(noticeMs.size()>0){
                     if(adapter==null){
                         adapter=new NoticeAdapter(noticeMs);
+                        noticeBanner.setAdapter(adapter);
                     }
-                    noticeBanner.setAdapter(adapter);
+
+                    if(noticeBanner.getAdapter()==null){
+                        if(adapter==null){
+                            adapter=new NoticeAdapter(noticeMs);
+                        }
+                        noticeBanner.setAdapter(adapter);
+                    }
+
+                    adapter.setOnItemClickListener(new NoticeAdapter.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(View view, NoticeModel data) {
+                            if(!ButtonUtils.isFastDoubleClick()){
+                                Intent intent=new Intent(getActivity(), NoticeDetailActivity.class);
+                                intent.putExtra("notice_id",data.url);
+                                startActivity(intent);
+                            }
+                        }
+                    });
+                    noticeBanner.start();
                 }
 
-                adapter.setOnItemClickListener(new NoticeAdapter.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(View view, NoticeModel data) {
-                        if(!ButtonUtils.isFastDoubleClick()){
-                            Intent intent=new Intent(getActivity(), NoticeDetailActivity.class);
-                            intent.putExtra("notice_id",data.url);
-                            startActivity(intent);
-                        }
-                    }
-                });
-                noticeBanner.start();
 
             }else if(msg.what==3){//推荐项目设置数据
                 requestNewHand();
@@ -254,7 +251,7 @@ public class HomeFragment extends LazyLoadFragment implements View.OnClickListen
     private TranslucentActionBar actionBar;
     @Override
     protected void initViews() {
-
+        EventBus.getDefault().register(this);
         mainActivity= (MainActivity) getActivity();
         XStatusBar.setTranslucentForImageView(mainActivity, 0, banner);
         actionBar=findViewById(R.id.actionbar_main);
@@ -325,6 +322,10 @@ public class HomeFragment extends LazyLoadFragment implements View.OnClickListen
             check();
         }
         init();
+
+        //有网络的情况下请求数据
+        homeRefresh.setRefreshing(true);
+        refreshListener.onRefresh();
     }
 
     private void init() {//初始actionBar
@@ -352,10 +353,7 @@ public class HomeFragment extends LazyLoadFragment implements View.OnClickListen
 
     @Override
     public void lazyLoad() {
-        XPreferencesUtils.put("isRefreshFlag","home");
-        //有网络的情况下请求数据
-        homeRefresh.setRefreshing(true);
-        refreshListener.onRefresh();
+
     }
 
     //投标数据请求
@@ -658,6 +656,17 @@ public class HomeFragment extends LazyLoadFragment implements View.OnClickListen
         //注意这个是8.0新API
         Intent intent = new Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, packageURI);
         startActivityForResult(intent, 120);
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void getMsg(UpdateBean bean){
+       checkVersion();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
     }
 
 
