@@ -34,6 +34,7 @@ import com.example.administrator.huorongdai.xframe.utils.XPreferencesUtils;
 import com.example.administrator.huorongdai.xframe.utils.http.HttpCallBack;
 import com.example.administrator.huorongdai.xframe.utils.http.XHttp;
 import com.example.administrator.huorongdai.xframe.utils.imageload.XImage;
+import com.example.administrator.huorongdai.xframe.utils.log.XLog;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
@@ -74,6 +75,8 @@ public class MyFragment extends LazyLoadFragment implements View.OnClickListener
     public SwipeRefreshLayout.OnRefreshListener refreshListener=new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {//刷新
+            isLogin= (boolean) XPreferencesUtils.get("isLogin",false);
+            openStatus= (int) XPreferencesUtils.get("openStatus",4);
             if(XNetworkUtils.isConnected()){
                 if(isLogin){
                     custMobile = (String) XPreferencesUtils.get("custMobile","");
@@ -94,7 +97,7 @@ public class MyFragment extends LazyLoadFragment implements View.OnClickListener
                     tvName.setText("您好，请登录/注册");
                     canUseMoneyTv.setText("0.00");
                     tvMoney.setText("0.00");
-                    initDialog();
+                    //initDialog();
                 }
             }else {
                 tvName.setText("网络连接失败!");
@@ -158,9 +161,13 @@ public class MyFragment extends LazyLoadFragment implements View.OnClickListener
         decimal=new DecimalFormat("0.00");
         dialog = new CustomDialog(getActivity(), R.style.custom_dialog2, R.layout.login_notice);
 
-        isLogin= (boolean) XPreferencesUtils.get("isLogin",false);
-        openStatus= (int) XPreferencesUtils.get("openStatus",4);
         refreshLayout.setRefreshing(true);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
         refreshListener.onRefresh();
     }
 
@@ -197,6 +204,8 @@ public class MyFragment extends LazyLoadFragment implements View.OnClickListener
 
     @Override
     public void onClick(View view) {
+        isLogin= (boolean) XPreferencesUtils.get("isLogin",false);
+        openStatus= (int) XPreferencesUtils.get("openStatus",4);
         if(isLogin){
             switch (view.getId()){
                 case R.id.ll_user://个人信息

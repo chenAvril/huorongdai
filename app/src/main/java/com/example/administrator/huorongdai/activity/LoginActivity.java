@@ -60,8 +60,8 @@ public class LoginActivity extends BaseActivity {
         tvForgetPsw.setOnClickListener(this);
 
         //15155118752 wang123456
-        etUserNumber.setText("13515661980");
-        etUserPsw.setText("fang123456");
+//        etUserNumber.setText("13515661980");
+//        etUserPsw.setText("fang123456");
     }
 
     @Override
