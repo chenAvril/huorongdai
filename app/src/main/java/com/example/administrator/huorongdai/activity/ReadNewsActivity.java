@@ -196,7 +196,6 @@ public class ReadNewsActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
         // 销毁 WebView
         if (mWebView != null) {
             ViewGroup viewGroup = (ViewGroup) mWebView.getParent();
@@ -217,6 +216,6 @@ public class ReadNewsActivity extends BaseActivity {
         //如果参数为null的话，会将所有的Callbacks和Messages全部清除掉。
         handler.removeCallbacksAndMessages( null );
 
-        //Process.killProcess(Process.myPid());
+        super.onDestroy();
     }
 }
