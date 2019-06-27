@@ -21,7 +21,6 @@
                 <LinearLayout
                     style="@style/open_acc_ll_two">
                     <EditText
-                        android:text="陈磊"
                         android:id="@+id/cus_real_name_et"
                         style="@style/open_acc_et"
                         android:hint="请输入您的真实姓名" />

@@ -24,7 +24,9 @@
 
         <TextView style="@style/more_activity_tv_line" />
 
-        <RelativeLayout style="@style/more_activity_rl"
+        <RelativeLayout
+            android:visibility="gone"
+            style="@style/more_activity_rl"
             android:id="@+id/base_information_rl">
 
             <TextView
@@ -34,9 +36,13 @@
             <ImageView style="@style/more_activity_iv_right" />
         </RelativeLayout>
 
-        <TextView style="@style/more_activity_tv_line" />
+        <TextView
+            android:visibility="gone"
+            style="@style/more_activity_tv_line" />
 
-        <RelativeLayout style="@style/more_activity_rl"
+        <RelativeLayout
+            android:visibility="gone"
+            style="@style/more_activity_rl"
             android:id="@+id/rl_person_info">
 
             <TextView
@@ -46,9 +52,13 @@
             <ImageView style="@style/more_activity_iv_right" />
         </RelativeLayout>
 
-        <TextView style="@style/more_activity_tv_line" />
+        <TextView
+            android:visibility="gone"
+            style="@style/more_activity_tv_line" />
 
-        <RelativeLayout style="@style/more_activity_rl"
+        <RelativeLayout
+            android:visibility="gone"
+            style="@style/more_activity_rl"
             android:id="@+id/file_progress_rl">
 
             <TextView
@@ -58,9 +68,13 @@
             <ImageView style="@style/more_activity_iv_right" />
         </RelativeLayout>
 
-        <TextView style="@style/more_activity_tv_line" />
+        <TextView
+            android:visibility="gone"
+            style="@style/more_activity_tv_line" />
 
-        <RelativeLayout style="@style/more_activity_rl"
+        <RelativeLayout
+            android:visibility="gone"
+            style="@style/more_activity_rl"
             android:id="@+id/team_manager_rl">
 
             <TextView

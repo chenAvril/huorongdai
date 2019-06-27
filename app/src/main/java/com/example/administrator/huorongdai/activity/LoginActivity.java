@@ -59,6 +59,7 @@ public class LoginActivity extends BaseActivity {
         tvRegister.setOnClickListener(this);
         tvForgetPsw.setOnClickListener(this);
 
+        //15155118752 wang123456
         etUserNumber.setText("13515661980");
         etUserPsw.setText("fang123456");
     }
