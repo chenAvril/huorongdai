@@ -269,14 +269,9 @@ public class HtmlActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
 
         // 销毁 WebView
         if (mWebView != null) {
-            mWebView.setWebChromeClient(null);
-            mWebView.setWebViewClient(null);
-            mWebView.clearCache(true);
-
             // 如果先调用destroy()方法，则会命中if (isDestroyed()) return;这一行代码，需要先onDetachedFromWindow()，再
             // destory()
             ViewParent parent = mWebView.getParent();
@@ -298,7 +293,7 @@ public class HtmlActivity extends BaseActivity {
         //如果参数为null的话，会将所有的Callbacks和Messages全部清除掉。
         handler.removeCallbacksAndMessages( null );
 
-        //Process.killProcess(Process.myPid());
+        super.onDestroy();
     }
 
 
