@@ -174,7 +174,7 @@
                 android:id="@+id/tv_service_contract"
                 android:textSize="14dp"
                 android:textColor="@color/word_red"
-                android:text="《货融贷网站服务协议》"
+                android:text="《货融金服网站服务协议》"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>

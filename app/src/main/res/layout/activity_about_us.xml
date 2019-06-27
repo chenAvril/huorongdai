@@ -70,7 +70,7 @@
                 android:textColor="@color/word_gray"
                 android:textSize="16dp"
                 android:layout_margin="10dp"
-                android:text="2015年12月安徽恩泽资产管理有限公司成立"
+                android:text="2015年12月安徽恩泽瑞企业管理有限公司资产管理有限公司成立"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -106,7 +106,7 @@
                 android:textColor="@color/word_gray"
                 android:textSize="16dp"
                 android:layout_margin="10dp"
-                android:text="2016年2月货融贷平台上线"
+                android:text="2016年2月货融金服平台上线"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -142,7 +142,7 @@
                 android:textColor="@color/word_gray"
                 android:textSize="16dp"
                 android:layout_margin="10dp"
-                android:text="2016年4月货融贷平台注册人数突破5000人，入金突破1000000元"
+                android:text="2016年4月货融金服平台注册人数突破5000人，入金突破1000000元"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -178,7 +178,7 @@
                 android:textColor="@color/word_gray"
                 android:textSize="16dp"
                 android:layout_margin="10dp"
-                android:text="2016年11月“重装起航“，货融贷更新升级第三方支付系统，为资金存管做准备"
+                android:text="2016年11月“重装起航“，货融金服更新升级第三方支付系统，为资金存管做准备"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -214,7 +214,7 @@
                 android:textColor="@color/word_gray"
                 android:textSize="16dp"
                 android:layout_margin="10dp"
-                android:text="2016年12月国资背景、注资千万级别Pre-A轮，货融贷正式拥有“国资背景”的背景平台"
+                android:text="2016年12月国资背景、注资千万级别Pre-A轮，货融金服正式拥有“国资背景”的背景平台"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -250,7 +250,7 @@
                 android:textColor="@color/word_gray"
                 android:textSize="16dp"
                 android:layout_margin="10dp"
-                android:text="2016年12月底首次货融贷实地考察"
+                android:text="2016年12月底首次货融金服实地考察"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>

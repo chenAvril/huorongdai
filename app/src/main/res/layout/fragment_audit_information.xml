@@ -73,7 +73,7 @@
                     android:textColor="@color/word_gray"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="20dp"
-                    android:text="主要审计意见：我们认为，货融贷财务报表在所有重大方面按照企业会计准则的规定编制，公允反映了货融贷2017年12月31日的财务 状况以及2017年度的经营成果和现金流量。"
+                    android:text="主要审计意见：我们认为，货融金服财务报表在所有重大方面按照企业会计准则的规定编制，公允反映了货融金服2017年12月31日的财务 状况以及2017年度的经营成果和现金流量。"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>

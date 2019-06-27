@@ -8,7 +8,7 @@ public class CheckVersionBean {
 
 
     /**
-     * data : {"appFile":"http://enze.oss-cn-shanghai.aliyuncs.com/nstall/images/20170805/H583A2CB6_0805140750.apk","status":true,"updateReason":"<p>账户新增积分商城，投资奖品兑换<\/p>","verCode":9,"verName":"货融贷2.8.0","message":""}
+     * data : {"appFile":"http://enze.oss-cn-shanghai.aliyuncs.com/nstall/images/20170805/H583A2CB6_0805140750.apk","status":true,"updateReason":"<p>账户新增积分商城，投资奖品兑换<\/p>","verCode":9,"verName":"货融金服2.8.0","message":""}
      */
 
     private DataBean data;
@@ -27,7 +27,7 @@ public class CheckVersionBean {
          * status : true
          * updateReason : <p>账户新增积分商城，投资奖品兑换</p>
          * verCode : 9
-         * verName : 货融贷2.8.0
+         * verName : 货融金服2.8.0
          * message :
          */
 

@@ -182,7 +182,7 @@ public class RegisterActivity extends BaseActivity {
                 Intent intent = new Intent(this, HtmlActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("url", Path.web_service_contract_url);
-                bundle.putString("title", "货融贷网站服务协议");
+                bundle.putString("title", "货融金服网站服务协议");
                 intent.putExtra("bundle", bundle);
                 startActivity(intent);
                 break;

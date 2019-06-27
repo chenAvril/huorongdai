@@ -112,7 +112,7 @@
             android:gravity="center"
             android:textColor="@color/word_dark"
             android:textSize="16dp"
-            android:text="恩泽资产"
+            android:text="恩泽瑞企业管理有限公司资产"
             android:layout_toRightOf="@id/iv_weixin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
