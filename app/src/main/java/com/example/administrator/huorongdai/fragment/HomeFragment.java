@@ -21,6 +21,7 @@ import android.text.Html;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -157,7 +158,6 @@ public class HomeFragment extends LazyLoadFragment implements View.OnClickListen
                 banner.setImages(bannerImages);
                 //设置轮播时间
                 banner.setDelayTime(3000);
-
                 banner.setOnBannerListener(new OnBannerListener() {
                     @Override
                     public void OnBannerClick(int position) {

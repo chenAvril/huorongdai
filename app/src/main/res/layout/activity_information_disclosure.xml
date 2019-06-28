@@ -22,7 +22,9 @@
             <ImageView style="@style/more_activity_iv_right" />
         </RelativeLayout>
 
-        <TextView style="@style/more_activity_tv_line" />
+        <TextView
+            android:visibility="gone"
+            style="@style/more_activity_tv_line" />
 
         <RelativeLayout
             android:visibility="gone"

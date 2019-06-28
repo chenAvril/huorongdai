@@ -39,8 +39,8 @@ public class Path {
      * 密码:123456
      */
 
-//    public static String  BASE_URL = "http://www.jsxtd.group/";//线上
-    public static String  BASE_URL = "http://106.14.127.18/";//测试环境
+    public static String  BASE_URL = "http://www.jsxtd.group/";//线上
+//    public static String  BASE_URL = "http://106.14.127.18/";//测试环境
 
 
 //    public static String  BASE_URL = "http://192.168.0.194:8080/hrd_web/";//15155118003  登录密码wang123   投资密码118003   交易密码wang123.
