@@ -127,11 +127,11 @@ public class Html5WebView extends WebView {
         @Override
         public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
             //super.onReceivedSslError(view, handler, error);
-            if (error.getPrimaryError() == SslError.SSL_UNTRUSTED) {
+//             if (error.getPrimaryError() == SslError.SSL_UNTRUSTED) {
                 handler.proceed();
-            } else {
-                handler.cancel();
-            }
+//             } else {
+//                 handler.cancel();
+//             }
         }
     }
 
