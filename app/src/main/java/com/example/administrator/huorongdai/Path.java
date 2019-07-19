@@ -39,7 +39,7 @@ public class Path {
      * 密码:123456
      */
 
-    public static String  BASE_URL = "http://www.jsxtd.group/";//线上
+    public static String  BASE_URL = "http://www.huorongjinfu.com/";//线上
 //    public static String  BASE_URL = "http://106.14.127.18/";//测试环境
 
 
